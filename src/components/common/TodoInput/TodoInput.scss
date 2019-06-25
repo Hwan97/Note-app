@@ -1,0 +1,11 @@
+.input-content {
+  border: 1px solid $oc-gray-4;
+  display: flex;
+  padding: 1rem;  
+  justify-content: center;
+  
+  .add-btn {
+    background: $oc-blue-5;
+    padding: 1rem;
+  }
+}

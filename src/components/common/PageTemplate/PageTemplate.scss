@@ -1,6 +1,8 @@
 .page-template {
-  main {
-    background: gray;
-    height: 100px;
+  .content {
+    background: $oc-gray-1;
+    height: 500px;
+    width: calc(100% - 2rem);
+    margin: auto;
   }
 }
