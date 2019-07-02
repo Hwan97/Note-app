@@ -8,6 +8,11 @@ import TodoList from './common/TodoList';
 class App extends Component {
   state = {
     input: '' // 인풋 값
+
+    todos: [
+      {id: 0, text: '아이템 1', done: true},
+      {id: 1, text: '아이템 2', done: false}
+    ]
   }
 
   handleChange = (e) => {
@@ -16,9 +21,25 @@ class App extends Component {
       input: value
     })
   }
+  handleInsert = () => {
+    const { todos, input } = this.state 
+
+    // 새 데이터 객체 생성
+
+    const newTodo = {
+      text: input,
+      done: false,
+      id : this.getId()
+    };
+
+    this.setState({
+      todos : [...todos, newTodo],
+      input : ''
+    });
+  }
 
   render() {
-    const { input } = this.state;
+    const { input, todos } = this.state;
     const {
         handleChange
     } = this;
