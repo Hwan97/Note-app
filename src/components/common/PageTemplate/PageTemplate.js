@@ -14,7 +14,6 @@ const PageTemplate = ({children}) => {
   return (
     <div className={cx('page-template')}>
     <Header></Header>
-
       <h1>일정 관리</h1>
       <div className={cx('content')}>
         {children}

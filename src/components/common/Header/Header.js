@@ -8,9 +8,7 @@ const cx = classNames.bind(styles);
 const Header = () => (
   <header className={cx('header')}>
     <div className={cx('header-content')}>
-    </div>
-    <div className={cx('right-btn')}>
-      오른쪽
+      <h3 className={cx('header-title')}>My Note App</h3>
     </div>
    </header>
 );

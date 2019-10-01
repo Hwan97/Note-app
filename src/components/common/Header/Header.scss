@@ -1,13 +1,12 @@
 // @import 'utils';
 
 .header {
-  background: $oc-indigo-2;
+  background: #3b57ab;
   .header-content {
-    height: 5rem;
+    height: 50px;
     width: 100% ;
     margin: 0 auto;
-    padding: 3rem ;
-
+    padding: 2rem ;
     display: flex;
     align-items: center;
 
@@ -24,8 +23,8 @@
       font-weight: bold;
     }
 
-    .right {
-      margin-left: auto;
+    .header-title {
+      color: #fff;
     }
   }
 }
