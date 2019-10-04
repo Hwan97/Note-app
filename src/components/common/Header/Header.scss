@@ -1,14 +1,19 @@
 // @import 'utils';
-
 .header {
   background: #3b57ab;
   .header-content {
     height: 50px;
     width: 100% ;
     margin: 0 auto;
-    padding: 2rem ;
+    padding: 2rem 10rem ;
     display: flex;
     align-items: center;
+    color: #fff;
+
+    span {
+     margin-left:  auto; 
+     font-weight: bold;
+    }
 
     @include media("<wide") {
       width: 100%;
@@ -22,9 +27,9 @@
       font-size: .5rem;
       font-weight: bold;
     }
-
-    .header-title {
-      color: #fff;
-    }
+  }
+  .login-form {
+    height: 300px;
+    background: red;    
   }
 }
