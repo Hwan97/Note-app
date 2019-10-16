@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PageTemplate.scss';
 import classNames from 'classnames/bind';
-import Header from 'components/common/Header';
+import HeaderContainer from 'containers/common/HeaderContainer';
 import TodoInput from 'components/common/TodoInput';
 import TodoList from 'components/common/TodoList';
 
@@ -13,7 +13,7 @@ const cx = classNames.bind(styles);
 const PageTemplate = ({children}) => {
   return (
     <div className={cx('page-template')}>
-    <Header></Header>
+    <HeaderContainer></HeaderContainer>
       <h1>일정 관리</h1>
       <div className={cx('content')}>
         {children}

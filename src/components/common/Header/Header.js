@@ -5,11 +5,11 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-const Header = (onLogin) => (
+const Header = ({onLoginClick}) => (
   <header className={cx('header')}>
     <div className={cx('header-content')}>
       <h3 className={cx('header-title')}>My Note App</h3>      
-      <span onClick={onLogin} className={cx('login-form')}>로그인</span>
+      <span onClick={onLoginClick} className={cx('login-form')}>로그인</span>
     </div>
    </header>
 );
